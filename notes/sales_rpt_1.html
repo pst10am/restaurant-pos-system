@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+   <title>Summary Report</title>
+   <meta name="author" content="">
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <style>
+      body {
+         margin: 5px;
+         font: 12px "Arial Black", Gadget, sans-serif;
+      }
+      table { 
+         border-collapse: collapse; 
+      }
+      td {
+         padding: 3px;
+      }
+      .td_amt {
+         padding-left: 50px;
+         text-align: right;
+      }
+   </style>
+</head><body>
+
+Summary Report<br>
+From: <b>5/1/15 10:05</b> To: <b>5/1/15 13:00</b><br>
+
+<br>
+<b>*PAID Orders*</b><br>
+From Order No. <b>[ord_no_from]</b> to <b>[ord_no_to]</b><br>
+<table>
+   <tr><td>Amount</td><td class='td_amt'>[tot_paid_amt]</td></tr>
+   <tr><td>Ticket Count</td><td class='td_amt'>[tot_paid_ticket]</td></tr>
+</table>
+
+<br>
+<b>Payment</b><br>
+<table>
+   <tr><td>Amount</td><td class='td_amt'>[pm_tot_amt]</td></tr>
+</table>
+
+
+
+<br>
+<b>*Un-PAID Orders*</b><br>
+
+
+<br><br>
+</body></html>

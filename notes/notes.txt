@@ -1,0 +1,95 @@
+
+
+TRUNCATE TABLE tb_settle;
+
+
+INSERT INTO tb_settle (stl_dt, stl_status)
+	SELECT 
+		a.cl_dt stl_dt,
+		1 stl_status
+	FROM
+		tb_shift a
+	WHERE
+	a.cl_id = (
+		SELECT b.cl_id FROM tb_shift b WHERE
+		DATE(a.cl_dt) = DATE(b.cl_dt)
+		ORDER BY b.cl_dt DESC LIMIT 1)
+;
+
+
+
+
+
+
+
+
+TRUNCATE tb_clock;
+TRUNCATE tb_shift;
+TRUNCATE tb_gift;
+TRUNCATE tb_gift_Trx;
+TRUNCATE tb_order;
+TRUNCATE tb_order_dc;
+TRUNCATE tb_order_item;
+TRUNCATE tb_order_item_opi;
+TRUNCATE tb_payment;
+TRUNCATE tb_uep_resp;
+UPDATE tx_sct_table SET tbl_service='Ready', tbl_is_locked=0;
+COMMIT;
+
+
+DELIMITER $$
+DROP FUNCTION IF EXISTS `SeqNo`$$
+CREATE FUNCTION `SeqNo`(_name TEXT) RETURNS INT(11)
+BEGIN
+   DECLARE seqno INT;
+   UPDATE tx_seq SET seq_no = LAST_INSERT_ID(seq_no + 1) WHERE seq_name=_name;
+   SELECT LAST_INSERT_ID() INTO seqno;
+   RETURN seqno;
+END$$
+DELIMITER ;
+
+
+-- Create an application user limited to the POS database (choose your own password).
+CREATE USER 'pos_user'@'localhost' IDENTIFIED BY '<CHOOSE_A_STRONG_PASSWORD>';
+GRANT SELECT, INSERT, UPDATE, DELETE ON pos_db.* TO 'pos_user'@'localhost';
+
+FLUSH PRIVILEGES;
+
+
+
+
+
+
+
+
+
+
+
+
+TRUNCATE tx_area;
+
+INSERT INTO tx_area (area_id, area_name, area_deli_fee, area_status)
+VALUES
+(1, 'area1', 3, 1),
+(2, 'area2', 4, 1)
+;
+
+COMMIT;
+
+TRUNCATE tx_area_vt;
+
+INSERT INTO tx_area_vt (area_id, vseq, vx, vy) VALUES 
+(1,1,41.924662,-87.707217),
+(1,2,41.925137,-87.668126),
+(1,3,41.903347,-87.667481),
+(1,4,41.902860,-87.706767)
+;
+
+INSERT INTO tx_area_vt (area_id, vseq, vx, vy) VALUES
+(2,1,41.931999,-87.712262),
+(2,2,41.932490,-87.663558),
+(2,3,41.899873,-87.656610),
+(2,4,41.899145,-87.711518)
+;
+
+COMMIT;

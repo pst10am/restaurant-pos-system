@@ -1,0 +1,13 @@
+
+# Copy this file to config.ini and fill in your own values.
+# config.ini is git-ignored: never commit real credentials.
+
+db_conn_str=jdbc:mysql://127.0.0.1/pos_db?autoReconnect=true
+db_user=pos_user
+db_pwd=CHANGE_ME
+
+# Google Maps Static API key (used for delivery-address map preview)
+maps_api_key=
+
+# terminal name (matches a row in tx_cfg_trm)
+trm_name=Terminal1

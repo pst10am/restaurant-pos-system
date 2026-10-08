@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE JposEntries PUBLIC "-//JavaPOS//DTD//EN" "jpos/res/jcl.dtd">
+<JposEntries>
+
+    <JposEntry logicalName="KITCHEN1_1">
+        <creation factoryClass="com.starmicronics.starjavapos.ServiceInstanceFactory" serviceClass="com.starmicronics.starjavapos.POSPrinterService"/>
+        <vendor name="Star Micronics" url="www.star-m.jp/eng/index.htm"/>
+        <jpos category="POSPrinter" version="1.13"/>
+        <product description="Thermal receipt printer" name="TSP100LAN" url="www.futureprnt.com"/>
+        <prop name="model" type="String" value="TSP100LAN"/>
+        <prop name="portName" type="String" value="tsp100lan:TSP100LAN_192.0.2.25"/>
+        <prop name="portSettings" type="String" value=""/>
+        <prop name="ioTimeoutMillis" type="Integer" value="5000"/>
+    </JposEntry>
+
+    <JposEntry logicalName="CASH1_1">
+        <creation factoryClass="com.starmicronics.starjavapos.ServiceInstanceFactory" serviceClass="com.starmicronics.starjavapos.POSPrinterService"/>
+        <vendor name="Star Micronics" url="www.star-m.jp/eng/index.htm"/>
+        <jpos category="POSPrinter" version="1.13"/>
+        <product description="Thermal receipt printer" name="TSP100LAN" url="www.futureprnt.com"/>
+        <prop name="model" type="String" value="TSP100LAN"/>
+        <prop name="portName" type="String" value="tsp100lan:TSP100LAN_192.0.2.35"/>
+        <prop name="portSettings" type="String" value=""/>
+        <prop name="ioTimeoutMillis" type="Integer" value="5000"/>
+    </JposEntry>
+
+    <JposEntry logicalName="CASH1_CashDrawer_1">
+        <creation factoryClass="com.starmicronics.starjavapos.ServiceInstanceFactory" serviceClass="com.starmicronics.starjavapos.CashDrawerService"/>
+        <vendor name="Star Micronics" url="www.star-m.jp/eng/index.htm"/>
+        <jpos category="CashDrawer" version="1.13"/>
+        <product description="Printer controlled cash drawer" name="Star Micronics cash drawer controller" url="www.futureprnt.com"/>
+        <prop name="portName" type="String" value="tsp100lan:TSP100LAN_192.0.2.35"/>
+        <prop name="portSettings" type="String" value=""/>
+        <prop name="ioTimeoutMillis" type="Integer" value="5000"/>
+        <prop name="controlPrimaryDrawer" type="Boolean" value="true"/>
+        <prop name="firePulseWidth" type="Long" value="200"/>
+        <prop name="sleepPulseWidth" type="Long" value="200"/>
+        <prop name="capStatus" type="Boolean" value="true"/>
+        <prop name="signalLevelHighWhenDrawerOpen" type="Boolean" value="true"/>
+    </JposEntry>
+
+    <JposEntry logicalName="CASH2_1">
+        <creation factoryClass="com.starmicronics.starjavapos.ServiceInstanceFactory" serviceClass="com.starmicronics.starjavapos.POSPrinterService"/>
+        <vendor name="Star Micronics" url="www.star-m.jp/eng/index.htm"/>
+        <jpos category="POSPrinter" version="1.13"/>
+        <product description="Thermal receipt printer" name="TSP100LAN" url="www.futureprnt.com"/>
+        <prop name="model" type="String" value="TSP100LAN"/>
+        <prop name="portName" type="String" value="tsp100lan:TSP100LAN_192.0.2.45"/>
+        <prop name="portSettings" type="String" value=""/>
+        <prop name="ioTimeoutMillis" type="Integer" value="5000"/>
+    </JposEntry>
+
+    <JposEntry logicalName="BUZZER1">
+        <creation factoryClass="com.starmicronics.starjavapos.ServiceInstanceFactory" serviceClass="com.starmicronics.starjavapos.CashDrawerService"/>
+        <vendor name="Star Micronics" url="www.star-m.jp/eng/index.htm"/>
+        <jpos category="CashDrawer" version="1.13"/>
+        <product description="Printer controlled cash drawer" name="Star Micronics cash drawer controller" url="www.futureprnt.com"/>
+        <prop name="portName" type="String" value="tsp100lan:TSP100LAN_192.0.2.25"/>
+        <prop name="portSettings" type="String" value=""/>
+        <prop name="ioTimeoutMillis" type="Integer" value="500"/>
+        <prop name="controlPrimaryDrawer" type="Boolean" value="true"/>
+        <prop name="firePulseWidth" type="Long" value="900"/>
+        <prop name="sleepPulseWidth" type="Long" value="200"/>
+        <prop name="capStatus" type="Boolean" value="false"/>
+        <prop name="signalLevelHighWhenDrawerOpen" type="Boolean" value="false"/>
+    </JposEntry>
+
+    <JposEntry logicalName="PACK1_1">
+        <creation factoryClass="com.starmicronics.starjavapos.ServiceInstanceFactory" serviceClass="com.starmicronics.starjavapos.POSPrinterService"/>
+        <vendor name="Star Micronics" url="www.star-m.jp/eng/index.htm"/>
+        <jpos category="POSPrinter" version="1.13"/>
+        <product description="Thermal receipt printer" name="TSP100LAN" url="www.futureprnt.com"/>
+        <prop name="model" type="String" value="TSP100LAN"/>
+        <prop name="portName" type="String" value="tsp100lan:TSP100LAN_192.0.2.55"/>
+        <prop name="portSettings" type="String" value=""/>
+        <prop name="ioTimeoutMillis" type="Integer" value="5000"/>
+    </JposEntry>
+  
+  <JposEntry logicalName="tsp_25">
+    <creation factoryClass="com.starmicronics.starjavapos.ServiceInstanceFactory" serviceClass="com.starmicronics.starjavapos.POSPrinterService"/>
+    <vendor name="Star Micronics" url="www.star-m.jp/eng/index.htm"/>
+    <jpos category="POSPrinter" version="1.13"/>
+    <product description="Thermal receipt printer" name="TSP100LAN" url="www.futureprnt.com"/>
+    <prop name="model" type="String" value="TSP100LAN"/>
+    <prop name="portName" type="String" value="tsp100lan:TSP100LAN_10.0.0.25"/>
+    <prop name="portSettings" type="String" value=""/>
+    <prop name="ioTimeoutMillis" type="Integer" value="5000"/>
+  </JposEntry>
+  
+  <JposEntry logicalName="prn_181_kit_1">
+    <creation factoryClass="com.starmicronics.starjavapos.ServiceInstanceFactory" serviceClass="com.starmicronics.starjavapos.POSPrinterService"/>
+    <vendor name="Star Micronics" url="www.star-m.jp/eng/index.htm"/>
+    <jpos category="POSPrinter" version="1.13"/>
+    <product description="Thermal receipt printer" name="TSP100LAN" url="www.futureprnt.com"/>
+    <prop name="model" type="String" value="TSP100LAN"/>
+    <prop name="portName" type="String" value="tsp100lan:TSP100LAN_192.0.2.181"/>
+    <prop name="portSettings" type="String" value=""/>
+    <prop name="ioTimeoutMillis" type="Integer" value="5000"/>
+  </JposEntry>
+
+  <JposEntry logicalName="usb_1">
+     <creation factoryClass="com.starmicronics.starjavapos.ServiceInstanceFactory" serviceClass="com.starmicronics.starjavapos.POSPrinterService"/>
+     <vendor name="Star Micronics" url="www.star-m.jp/eng/index.htm"/>
+     <jpos category="POSPrinter" version="1.13"/>
+     <product description="Thermal receipt printer" name="TSP100" url="www.futureprnt.com"/>
+     <prop name="model" type="String" value="TSP100"/><prop name="portName" type="String" value="tsp100lm:5&amp;4b6ca23&amp;0&amp;1"/>
+     <prop name="portSettings" type="String" value=""/>
+     <prop name="ioTimeoutMillis" type="Integer" value="5000"/>
+     <prop name="doCheckedBlockPrinting" type="Boolean" value="true"/>
+  </JposEntry>
+
+</JposEntries>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Summary Report</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+         body {
+            margin: 10px;
+            font-family:Verdana,Geneva,sans-serif;
+            font-size: 12px;
+         }
+         table {
+            border-collapse: collapse;
+         }
+         .th1 {
+            background-color: darkblue;
+            color: white;
+            font-weight: bold;
+         }
+         .th2 {
+            background-color: green;
+            color: white;
+            font-weight: bold;
+         }
+         .th3 {
+            background-color: saddlebrown;
+            color: white;
+            font-weight: bold;
+         }
+         .tf1 {
+            font-weight: bold;
+         }
+      </style>
+   </head>
+   <body>
+      
+      Summary Report<br>
+      From [<b>5/5/15 11:13am</b>] To [<b>5/5/15 3:15pm</b>]<br>
+      <br><hr size="1"><br>
+
+      (1) Orders<br><br>
+      <table border="1" cellspacing="0" cellpadding="5">
+         <tr class="th1">
+            <td>Sale Type</td>
+            <td align="center">From-To</td>
+            <td align="right">#Orders</td>
+            <td align="right">Amt(BF.)</td>
+            <td align="right">Tax</td>
+            <td align="right">Deli-Fee</td>
+            <td align="right">Disc.</td>
+            <td align="right">Chrg.</td>
+            <td align="right">Total</td>
+         </tr>
+         <tr>
+            <td>Dine-In</td>
+            <td align="center">9001-9010</td>
+            <td align="right">99</td>
+            <td align="right">999.99</td>
+            <td align="right">999.99</td>
+            <td align="right">999.99</td>
+            <td align="right">999.99</td>
+            <td align="right">999.99</td>
+            <td align="right">9,999.99</td>
+         </tr>
+         <tr class="tf1">
+            <td align="right" colspan="2">Total</td>
+            <td align="right">99</td>
+            <td align="right">999.99</td>
+            <td align="right">999.99</td>
+            <td align="right">999.99</td>
+            <td align="right">999.99</td>
+            <td align="right">999.99</td>
+            <td align="right">9,999.99</td>
+         </tr>
+      </table>
+      
+      <br><br>
+      
+      (2) Receipts<br><br>
+      <table border="1" cellspacing="0" cellpadding="5">
+         <tr class="th2">
+            <td>Sale Type</td>
+            <td>Pay Type</td>
+            <td align="right">#Receipts</td>
+            <td align="right">Amount</td>
+            <td align="right">Tip</td>
+         </tr>
+         <tr>
+            <td>Dine-In</td>
+            <td>Cash</td>
+            <td align="right">3</td>
+            <td align="right">125.35</td>
+            <td align="right">0</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>Credit</td>
+            <td align="right">10</td>
+            <td align="right">525.35</td>
+            <td align="right">20.15</td>
+         </tr>
+      </table>
+      
+      <br><br>
+      
+      (3-1) Pay Type (Order)<br><br>
+      <table border="1" cellspacing="0" cellpadding="5">
+         <tr class="th3">
+            <td>Pay Type</td>
+            <td align="right">#Receipts</td>
+            <td align="right">Amount</td>
+            <td align="right">Tip</td>
+         </tr>
+         <tr>
+            <td>Cash</td>
+            <td align="right">3</td>
+            <td align="right">125.35</td>
+            <td align="right">0</td>
+         </tr>
+         <tr>
+            <td>Credit</td>
+            <td align="right">10</td>
+            <td align="right">525.35</td>
+            <td align="right">20.15</td>
+         </tr>
+      </table>
+      
+      <br>
+      
+      (3-2) Pay Type (Gift)<br><br>
+      <table border="1" cellspacing="0" cellpadding="5">
+         <tr class="th3">
+            <td>Pay Type</td>
+            <td align="right">#Receipts</td>
+            <td align="right">Amount</td>
+            <td align="right">Tip</td>
+         </tr>
+         <tr>
+            <td>Cash</td>
+            <td align="right">3</td>
+            <td align="right">125.35</td>
+            <td align="right">0</td>
+         </tr>
+         <tr>
+            <td>Credit</td>
+            <td align="right">10</td>
+            <td align="right">525.35</td>
+            <td align="right">20.15</td>
+         </tr>
+      </table>
+      
+      <br><br><br>
+      
+      <b>(4) Un-Captured Tips</b><br><br>
+      <table>
+         <tr><td>[order-no]</td><td>[date-time]</td><td>[order-type]</td><td>[qty]</td><td>[amount]</td></tr>
+         <tr><td>[order-no]</td><td>[date-time]</td><td>[order-type]</td><td>[qty]</td><td>[amount]</td></tr>
+         <tr><td>[order-no]</td><td>[date-time]</td><td>[order-type]</td><td>[qty]</td><td>[amount]</td></tr>
+      </table>
+      
+      <br><br>
+
+      <b>(5) Un-Paid Orders</b><br><br>
+      <table>
+         <tr><td>[order-no]</td><td>[date-time]</td><td>[order-type]</td><td>[qty]</td><td>[amount]</td></tr>
+         <tr><td>[order-no]</td><td>[date-time]</td><td>[order-type]</td><td>[qty]</td><td>[amount]</td></tr>
+         <tr><td>[order-no]</td><td>[date-time]</td><td>[order-type]</td><td>[qty]</td><td>[amount]</td></tr>
+      </table>
+      
+      <br><br>
+      
+      <b>(6) Charges</b><br><br>
+      <table>
+         <tr><td width="105">Descr #1</td><td align="right">[amount]</td></tr>
+         <tr><td width="105">Descr #2</td><td align="right">[amount]</td></tr>
+         <tr><td width="105">Descr #3</td><td align="right">[amount]</td></tr>
+         <tr><td width="105">Descr #4</td><td align="right">[amount]</td></tr>
+      </table>
+      
+      <br><br>
+      
+      <b>(7) Discounts</b><br><br>
+      <table>
+         <tr><td width="105">Descr #1</td><td align="right">[amount]</td></tr>
+         <tr><td width="105">Descr #2</td><td align="right">[amount]</td></tr>
+         <tr><td width="105">Descr #3</td><td align="right">[amount]</td></tr>
+         <tr><td width="105">Descr #4</td><td align="right">[amount]</td></tr>
+      </table>
+      
+      <br><br>
+      
+      <b>(8) Canceled Items</b><br><br>
+      <table>
+         <tr><td colspan="6"><i>Reason #1</i></td></tr>
+         <tr>
+            <td>[order-no]</td>
+            <td>[date-time]</td>
+            <td>[order-type]</td>
+            <td>[qty]</td>
+            <td>[amount]</td>
+            <td>[item-desc]</td>
+         </tr>
+         <tr>
+            <td>[order-no]</td>
+            <td>[date-time]</td>
+            <td>[order-type]</td>
+            <td>[qty]</td>
+            <td>[amount]</td>
+            <td>[item-desc]</td>
+         </tr>
+         <tr>
+            <td>[order-no]</td>
+            <td>[date-time]</td>
+            <td>[order-type]</td>
+            <td>[qty]</td>
+            <td>[amount]</td>
+            <td>[item-desc]</td>
+         </tr>
+         <tr><td colspan="6"><i>Reason #2</i></td></tr>
+         <tr>
+            <td>[order-no]</td>
+            <td>[date-time]</td>
+            <td>[order-type]</td>
+            <td>[qty]</td>
+            <td>[amount]</td>
+            <td>[item-desc]</td>
+         </tr>
+         <tr><td colspan="6"><i>Reason #3</i></td></tr>
+         <tr>
+            <td>[order-no]</td>
+            <td>[date-time]</td>
+            <td>[order-type]</td>
+            <td>[qty]</td>
+            <td>[amount]</td>
+            <td>[item-desc]</td>
+         </tr>
+         <tr>
+            <td>[order-no]</td>
+            <td>[date-time]</td>
+            <td>[order-type]</td>
+            <td>[qty]</td>
+            <td>[amount]</td>
+            <td>[item-desc]</td>
+         </tr>
+      </table>
+      
+      <br><br>
+      
+      <b>(9) Orders</b><br><br>
+      
+      <br><br>
+      
+      <b>(10) Payments</b><br><br>
+
+      <br><br><br>
+      <br><hr size="1">
+      End Of Report.<br><br><br>
+      
+   </body>
+</html>
+
+<!-- <br><br><br><br><hr size="1">End Of Report.<br><br><br></body></html> -->
+
+

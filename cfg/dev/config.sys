@@ -1,0 +1,24 @@
+
+shop_req_url=http://localhost/shop_req.php
+
+REM <printer-ip> OR <from_item>
+REM KITCHEN1_1
+kitchen_prn=tsp_25
+
+packing_prn=tsp_25
+
+cashier_prn=tsp_25
+
+REM yes/no
+send_to_printer=yes
+
+shop_line_1=Demo Restaurant
+shop_line_2=123 Main St
+shop_line_3=Springfield, IL 00000
+shop_line_4=(555)555-0100
+shop_line_5=
+
+def_width=600
+def_height=550
+
+slip_gen_class=print.SlipGenDefault
