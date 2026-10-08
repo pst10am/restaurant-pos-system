@@ -1,6 +1,6 @@
 # iEasyPos:Manager - Restaurant Point-of-Sale System
 
-A full point-of-sale system built in Java (Swing) for restaurant operations, co-built (50/50 partnership) and sold into 20+ restaurants in Seattle, WA. Full product lifecycle: design, build, customer deployment, and ongoing support.
+A full point-of-sale system built in Java (Swing) for restaurant operations.
 
 ## Overview
 
